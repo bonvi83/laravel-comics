@@ -20,6 +20,10 @@
         <!-- yield significa segnaposto -->
         @yield('main-content')
 
+
+        <!-- posso utilizzare il segna posto ANCHE per gli stili css e per js ovviamente se necessario -->
+
+
         <!-- includo il file footer e lavorerò su quello per il footer -->
         @include('partials.footer')
     </body>

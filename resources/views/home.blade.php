@@ -4,6 +4,8 @@
 <!-- questo sarà il contenuto del segnaposto -->
 @section('main-content')
 <h2>
-  comics
+  comics con arrey serie
 </h2> 
+
+
 @endsection

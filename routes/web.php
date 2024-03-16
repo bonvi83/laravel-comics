@@ -23,6 +23,10 @@ Route::get('/characters', function () {
 
 // la pagina comics la chiamo home per comodità, perchè lavorerò principalmente su questa
 Route::get('/', function () {
+
+  // qui vado a leggere il mio array comics.php
+  // $series = config('comics');
+
   return view('home');
 }) ->name('home');
 

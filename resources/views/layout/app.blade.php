@@ -17,7 +17,7 @@
         <!-- includo il file header e lavorerò su quello per l'header -->
         @include('partials.header')
 
-        <!-- yield ignifica segnaposto -->
+        <!-- yield significa segnaposto -->
         @yield('main-content')
 
         <!-- includo il file footer e lavorerò su quello per il footer -->

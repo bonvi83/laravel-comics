@@ -2,6 +2,8 @@
 @extends('layout.app')
 
 <!-- questo sarà il contenuto del segnaposto -->
+@section('main-content')
 <h2>
   comics
 </h2> 
+@endsection

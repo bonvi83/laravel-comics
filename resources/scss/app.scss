@@ -31,9 +31,11 @@ li {
 
 // FOOTER
 
-// ❌ immagine sfondo footer che non funziona ❌
 .primofooter {
+    // ❌ immagine sfondo footer che non funziona ❌
     background-image: "resources/images/footer-bg.jpg";
+
+    display: flex;
 }
 
 .secondofooter {

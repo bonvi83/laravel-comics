@@ -1,5 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 
+// creao root per il color primary
+
+// HEADER
+.riga {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(2 130 249);
+}
+
+// ❌ DA SISTEMARE PERCHE' COSI' SMINCHIA IL FOOTER ❌
 li {
     display: inline-block;
 
@@ -17,4 +27,16 @@ li {
 .imgcartoon {
     width: 100%;
     height: 300px;
+}
+
+// FOOTER
+
+// ❌ immagine sfondo footer che non funziona ❌
+.primofooter {
+    background-image: "resources/images/footer-bg.jpg";
+}
+
+.secondofooter {
+    background-color: rgb(48 48 48);
+    color: white;
 }

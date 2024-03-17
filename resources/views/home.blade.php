@@ -4,8 +4,10 @@
 <!-- questo sarà il contenuto del segnaposto -->
 @section('main-content')
 <h2>
-  comics con arrey serie
+  comics con arrey serie CHE OVVIAMENTE NON FUNZIONA
 </h2> 
+
+<!-- ❌ NON FUNZIONA LA LETTURA E STAMPA DELL'ARREY ❌ -->
 
 
 @endsection

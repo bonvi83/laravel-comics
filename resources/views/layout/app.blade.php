@@ -19,8 +19,6 @@
 
         <!-- yield significa segnaposto -->
         @yield('main-content')
-
-
         <!-- posso utilizzare il segna posto ANCHE per gli stili css e per js ovviamente se necessario -->
 
 

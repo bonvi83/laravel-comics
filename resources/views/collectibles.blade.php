@@ -4,6 +4,6 @@
 <!-- questo sarà il contenuto del segnaposto -->
 @section('main-content')
 <h2>
-collectibes
+collectibles
 </h2> 
 @endsection

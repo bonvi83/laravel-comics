@@ -4,6 +4,6 @@
 <!-- questo sarà il contenuto del segnaposto -->
 @section('main-content')
 <h2>
-characters
+movie
 </h2> 
 @endsection

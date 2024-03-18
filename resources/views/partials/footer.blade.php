@@ -13,6 +13,12 @@
                         <li>News</li>
                     </ul>
                 </div>
+                <div>SHOP
+                    <ul>
+                        <li>Shop DC</li>
+                        <li>Shop DC Collectibles</li>
+                    </ul>
+                </div>
                 <div>DC
                     <ul>
                         <li>Terms Of USe</li>

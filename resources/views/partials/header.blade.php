@@ -1,11 +1,9 @@
 <header>
     <!-- riga azzurra -->
     <div class="riga">
-
     </div>
 
     <div class="d-flex justify-content-center navbar">
-
         <!-- logo -->
         <img src="{{ Vite::asset('/resources/images/dc-logo.png') }}" alt="immagine icona">
 
@@ -14,7 +12,6 @@
             <!-- utilizzo il route('nome') per indicare il nome della rotta, in modo che se cambio gli url non devo sostituirli in tutte le pagine -->
             <!-- utilizzo Route::currentRouteName perchè mi dice su quale rotta sono ed è utile per evidenziare la pagina su cui sono -->
             <li>
-                <!-- ❌ SEMBA IN ERRORE MA FUNZIONA, DA RISOLVERE ❌ -->
                 <a @class([
                     'link', 
                     'active' => Route::currentRouteName()=='characters']) 
@@ -48,8 +45,8 @@
             <li>
                 <a @class([
                     'link', 
-                    'active' => Route::currentRouteName()=='collectibes']) 
-                    href="{{ route('collectibes') }}">collectibes</a>
+                    'active' => Route::currentRouteName()=='collectibles']) 
+                    href="{{ route('collectibles') }}">collectibles</a>
             </li>
             <li>
                 <a @class([
@@ -83,10 +80,6 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form> 
     </div>
-
-
-
-
 
     <!-- disegno colorato cartoni -->
     <div>

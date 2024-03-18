@@ -9,19 +9,31 @@
     background-color: rgb(2 130 249);
 }
 
-// ❌ DA SISTEMARE PERCHE' COSI' SMINCHIA IL FOOTER ❌
-li {
-    display: inline-block;
+.navbar {
+    align-items: center;
+}
 
-    .link {
-        text-decoration: none;
-        color: inherit;
-        padding: 1rem;
-    }
+header {
+    li {
+        display: inline-block;
 
-    .link.active {
-        background-color: rgb(2 130 249);
+        .link {
+            text-decoration: none;
+            color: inherit;
+            padding: 1rem;
+        }
+
+        .link.active {
+            background-color: rgb(2 130 249);
+        }
     }
+}
+
+.searchbar {
+    height: 90px;
+    width: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .imgcartoon {
@@ -30,12 +42,10 @@ li {
 }
 
 // FOOTER
-
 .primofooter {
-    // ❌ immagine sfondo footer che non funziona ❌
-    background-image: "resources/images/footer-bg.jpg";
-
+    background-image: url("../images/footer-bg.jpg");
     display: flex;
+    color: white;
 }
 
 .secondofooter {

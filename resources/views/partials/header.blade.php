@@ -4,7 +4,7 @@
 
     </div>
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center navbar">
 
         <!-- logo -->
         <img src="{{ Vite::asset('/resources/images/dc-logo.png') }}" alt="immagine icona">
@@ -21,40 +21,72 @@
                     href="{{ route('characters') }}">characters</a>
             </li>
             <li>
-                <a href="{{ route('home') }}" @if (Route::currentRouteName() == 'home') class="link active" @endif>comics</a>
+                {{-- il comics è la mia home --}}
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='home']) 
+                    href="{{ route('home') }}">comics</a>
             </li>
             <li>
-                <a href="{{ route('movie') }}" @if (Route::currentRouteName() == 'movie') class="link active" @endif>movie</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='movie']) 
+                    href="{{ route('movie') }}">movie</a>
             </li>
             <li>
-                <a href="{{ route('tv') }}" @if (Route::currentRouteName() == 'tv') class="link active" @endif>tv</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='tv']) 
+                    href="{{ route('tv') }}">tv</a>
             </li>
             <li>
-                <a href="{{ route('games') }}" @if (Route::currentRouteName() == 'games') class="link active" @endif>games</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='games']) 
+                    href="{{ route('games') }}">games</a>
             </li>
             <li>
-                <a href="{{ route('collectibes') }}" @if (Route::currentRouteName() == 'collectibes') class="link active" @endif>collectibes</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='collectibes']) 
+                    href="{{ route('collectibes') }}">collectibes</a>
             </li>
             <li>
-                <a href="{{ route('videos') }}" @if (Route::currentRouteName() == 'videos') class="link active" @endif>videos</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='videos']) 
+                    href="{{ route('videos') }}">videos</a>
             </li>
             <li>
-                <a href="{{ route('fans') }}" @if (Route::currentRouteName() == 'fans') class="link active" @endif>fans</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='fans']) 
+                    href="{{ route('fans') }}">fans</a>
             </li>
             <li>
-                <a href="{{ route('news') }}" @if (Route::currentRouteName() == 'news') class="link active" @endif>news</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='news']) 
+                    href="{{ route('news') }}">news</a>
             </li>
             <li>
-                <a href="{{ route('shop') }}" @if (Route::currentRouteName() == 'shop') class="link active" @endif>shop</a>
+                <a @class([
+                    'link', 
+                    'active' => Route::currentRouteName()=='shop']) 
+                    href="{{ route('shop') }}">shop</a>
             </li>
         </ul>
 
-        <!-- inserimento del search provvisiorio DA RIFARE -->
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <!-- searchbar -->
+        <form class="d-flex searchbar" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> 
     </div>
+
+
+
+
 
     <!-- disegno colorato cartoni -->
     <div>

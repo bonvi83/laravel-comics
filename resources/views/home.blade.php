@@ -6,19 +6,19 @@
 <!-- questo sarà il contenuto del segnaposto -->
 @section('main-content')
 
+<h2>
+  CURRENT SERIES
+</h2> 
+
 <section class="arraycard">
-  <h2>
-    comics con arrey serie
-  </h2> 
-  
   {{-- veridico che stampa in pagina il mio arrey --}}
   {{-- @dump($series) --}}
   
   <!-- stampo tramite foreach gli elementi che mi servono dell'arrey, in questo caso l'immagine (thumb) ed il nome della serie -->
-  <div class="row">
+  <div class="row p-3">
     @foreach($series as $serie)
-    <div class="col2">
-      <img src="{{ $serie['thumb'] }}" alt="" class="img-fluid">
+    <div class="col-2">
+      <img src="{{ $serie['thumb'] }}" alt="" class="img-fluid imgarray">
       <h5>{{ $serie['series'] }}</h5>
     </div>
     @endforeach

@@ -1,11 +1,13 @@
 <header>
     <!-- riga azzurra -->
-    <div class="riga">
+    <div class="riga d-flex justify-content-end">
+        <div>DC POWER VISA</div>
+        <div class="ms-5 me-2">ADDITIONAL DC SITES</div>
     </div>
 
     <div class="d-flex justify-content-center navbar">
         <!-- logo -->
-        <img src="{{ Vite::asset('/resources/images/dc-logo.png') }}" alt="immagine icona">
+        <img class="logoheader" src="{{ Vite::asset('/resources/images/dc-logo.png') }}" alt="immagine icona">
 
         <!-- link alle pagine -->
         <ul>

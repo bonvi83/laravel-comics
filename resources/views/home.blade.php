@@ -6,7 +6,7 @@
 <!-- questo sarà il contenuto del segnaposto -->
 @section('main-content')
 
-<div class="container">
+<section class="arraycard">
   <h2>
     comics con arrey serie
   </h2> 
@@ -19,10 +19,10 @@
     @foreach($series as $serie)
     <div class="col2">
       <img src="{{ $serie['thumb'] }}" alt="" class="img-fluid">
-      <h3>{{ $serie['series'] }}</h3>
+      <h5>{{ $serie['series'] }}</h5>
     </div>
     @endforeach
   </div>
-</div>
+</section>
 
 @endsection
